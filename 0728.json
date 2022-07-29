@@ -1,5 +1,5 @@
 {
-"spider":"clan://TVBox/0728.jar",
+"spider":"https://gitee.com/nxniuniu/za/raw/master/0728.jar",
 "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly93ZHMuZWNzeHMuY29tLzIyNjExOC5qcw=="]}]}],
 "sites":[
     {"key":"csp_Kunyu77","name":"🥇七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},   
