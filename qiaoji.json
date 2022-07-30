@@ -4,7 +4,7 @@
 "spider":"https://gitea.com/qiaoji/jar/raw/branch/main/qj07302_spider.txt;md5;60692195483b42b9416f70fea7869112",
 "wallpaper":"http://www.kf666888.cn/api/tvbox/img",
 // 直播
-"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlYS5jb20vcWlhb2ppL2phci9yYXcvYnJhbmNoL21haW4vemIudHh0"]}]}],
+"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly93ZHMuZWNzeHMuY29tLzIyNjExOC5qcw=="]}]}],
 
 "sites":[
 {"key":"KanSJ_spider","name":"🐞看视界","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
