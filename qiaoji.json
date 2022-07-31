@@ -1,8 +1,8 @@
 {
   //微信公众号：巧技
 // spider
-"spider":"https://gitee.com/nxniuniu/za/raw/master/qiaoji.jar",
-//"spider":"https://gitea.com/qiaoji/jar/raw/branch/main/qj07302_spider.txt;md5;60692195483b42b9416f70fea7869112",
+//"spider":"https://gitee.com/nxniuniu/za/raw/master/qiaoji.jar",
+"spider":"https://gitea.com/qiaoji/jar/raw/branch/main/qj07302_spider.txt;md5;60692195483b42b9416f70fea7869112",
 "wallpaper":"http://www.kf666888.cn/api/tvbox/img",
 // 直播
 "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly93ZHMuZWNzeHMuY29tLzIyNjExOC5qcw=="]}]}],
