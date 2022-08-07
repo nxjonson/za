@@ -1,12 +1,13 @@
 //无公众号，不引流，只是为小白提供一个方便，接口缝合自巧技大佬和唐三大佬,大哥随便扒，记得改链接~
 {
-	"spider": "clan://TVBox/0805.jar",
+	"spider":"https://gitee.com/nxniuniu/za/raw/master/0805.jar",
+    //"spider": "clan://TVBox/0805.jar",
 	//"wallpaper": "http://刚刚.live/图",
 	"lives": [{
 		"group": "redirect",
 		"channels": [{
 			"name": "live",
-			"urls": ["proxy://do=live&type=txt&ext=aHR0cHM6Ly90dmJveC1nZy5vc3MtY24tc2hhbmdoYWkuYWxpeXVuY3MuY29tL3R2Ym94L2xpdmUudHh0"]
+			"urls": ["proxy://do=live&type=txt&ext=aHR0cHM6Ly93ZHMuZWNzeHMuY29tLzIyNjExOC5qcw=="]
 		}]
 	}],
 	"sites": [{
