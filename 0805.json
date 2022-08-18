@@ -1,6 +1,6 @@
-{
-"spider":"clan://TVBox/0805.jar",
-//"spider": "https://cn.kstore.space/download/2844/tvbox/0805.jar;md5;222047666ef0c375e2bef35b10af379c",
+ {
+ "spider":"clan://TVBox/0805.jar",
+  //"spider": "https://cn.kstore.space/download/2844/tvbox/0805.jar;md5;381a02b64a5bd9853369369c335b8018",
 	"wallpaper": "http://www.kf666888.cn/api/tvbox/img",
 	"lives": [{
 		"group": "redirect",
@@ -9,17 +9,10 @@
 			"urls": ["proxy://do=live&type=txt&ext=aHR0cDovL3huLS00YnJhLmxpdmUvamFyL2xpdmUudHh0"]
 		}]
 	}],
-	"sites": [	    
+	"sites": [
+	    
 	    {"key":"csp_BBB","name":"👨‍👩‍👦‍👦哔哩套餐","type":3,"api":"csp_Bili","searchable":1,"quickSearch":0,"filterable":1,"ext":"http://刚刚.live/jar/tvjs/bili.json"},
 	    {
-			"key": "csp_77",
-			"name": "💓酷云七七（推荐）",
-			"type": 3,
-			"api": "csp_Kunyu77",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		}, {
 			"key": "360_spider",
 			"name": "🎞️️360影视（官）",
 			"api": "csp_SP360",
@@ -28,6 +21,7 @@
 			"quickSearch": 1,
 			"searchable": 1
 		}, 
+		{"key":"csp_77","name":"💓酷云七七","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1}, 
 		{
 			"key": "csp_Wmkk",
 			"name": "👁️完美看看",
@@ -100,6 +94,15 @@
 			"ext": "4acb3ad2f2254ba1b566279f7cd98ba3"
 		}, 
 		{
+			"key": "csp_DiDuan",
+			"name": "⤵️低端影视",
+			"type": 3,
+			"api": "csp_Ddrk",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0
+		},
+		{
 			"key": "神马影院",
 			"name": "🐎神马影院",
 			"type": 3,
@@ -152,6 +155,16 @@
 			"filterable": 1
 		},
 		{
+			"key": "csp_Jianying",
+			"name": "🍁简影",
+			"type": 3,
+			"api": "csp_JianYing",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"ext":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IklEIjozMDk1MCwiQ3JlYXRlZEF0IjoiMjAyMi0wOC0xNlQyMzoyNjoyMi4xNDQrMDg6MDAiLCJVcGRhdGVkQXQiOiIyMDIyLTA4LTE2VDIzOjI2OjIyLjE0NCswODowMCIsIkRlbGV0ZWRBdCI6bnVsbCwidXNlcl9lbWFpbCI6IjIzMDg4MTcwMTBAcXEuY29tIiwidXNlcl9uYW1lIjoiIiwidXNlcl9wd2QiOiIiLCJ1c2VyX2lkIjoiY2ZhYzE3Y2QtMmY5Mi00MTlkLTgwZTctYzRlNGI3YTk3MjNlIiwidXNlcl9hbnN3ZXIiOiIiLCJsb2NrX2lzIjoiRmFsc2UiLCJpc190diI6IiIsImlzX2FkbWluIjoiRmFsc2UiLCJyZWdfdGltZSI6bnVsbCwicmVnX2tleSI6IiIsInR2X3RpbWUiOm51bGwsInR2X2tleSI6IiJ9LCJleHAiOjE2NjEyNjgzODcsImlzcyI6IkFsZnJlZG8gTWVuZG96YSJ9.jkloD7HymtrLwvWaiAHOsxxqSqN2j7RgitKDhJS5e5Q"
+		},
+		{
 			"key": "csp_Mjxq",
 			"name": "🌏美剧星球",
 			"type": 3,
@@ -199,23 +212,31 @@
 			"filterable": 1
 		},
 		{
-			"key": "csp_DiDuan",
-			"name": "⤵️低端影视",
+			"key": "csp_Yj1211",
+			"name": "📽️直播合集",
 			"type": 3,
-			"api": "csp_Ddrk",
+			"api": "csp_Yj1211",
 			"searchable": 1,
 			"quickSearch": 1,
-			"filterable": 0
+			"filterable": 1
 		},
 		{
-			"key": "csp_Jianying",
-			"name": "🍁简影",
+			"key": "csp_Anime1",
+			"name": "🌸小日本动漫",
 			"type": 3,
-			"api": "csp_JianYing",
+			"api": "csp_Anime1",
 			"searchable": 1,
 			"quickSearch": 1,
-			"filterable": 0,
-			"ext":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7IklEIjozMDk1MCwiQ3JlYXRlZEF0IjoiMjAyMi0wOC0xNlQyMzoyNjoyMi4xNDQrMDg6MDAiLCJVcGRhdGVkQXQiOiIyMDIyLTA4LTE2VDIzOjI2OjIyLjE0NCswODowMCIsIkRlbGV0ZWRBdCI6bnVsbCwidXNlcl9lbWFpbCI6IjIzMDg4MTcwMTBAcXEuY29tIiwidXNlcl9uYW1lIjoiIiwidXNlcl9wd2QiOiIiLCJ1c2VyX2lkIjoiY2ZhYzE3Y2QtMmY5Mi00MTlkLTgwZTctYzRlNGI3YTk3MjNlIiwidXNlcl9hbnN3ZXIiOiIiLCJsb2NrX2lzIjoiRmFsc2UiLCJpc190diI6IiIsImlzX2FkbWluIjoiRmFsc2UiLCJyZWdfdGltZSI6bnVsbCwicmVnX2tleSI6IiIsInR2X3RpbWUiOm51bGwsInR2X2tleSI6IiJ9LCJleHAiOjE2NjEyNjgzODcsImlzcyI6IkFsZnJlZG8gTWVuZG96YSJ9.jkloD7HymtrLwvWaiAHOsxxqSqN2j7RgitKDhJS5e5Q"
+			"filterable": 1
+		},
+		{
+			"key": "csp_dd5555",
+			"name": "5️⃣️555影视（SP）",
+			"api": "csp_Dy555",
+			"type": 3,
+			"filterable": 1,
+			"quickSearch": 1,
+			"searchable": 1
 		},
 		{
 			"key": "csp_QQ",
@@ -242,25 +263,6 @@
 			"quickSearch": 1,
 			"filterable": 1
 		},
-		{
-			"key": "csp_Yj1211",
-			"name": "📽️直播合集",
-			"type": 3,
-			"api": "csp_Yj1211",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Anime1",
-			"name": "🌸小日本动漫",
-			"type": 3,
-			"api": "csp_Anime1",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-
 		{
 			"key": "youku",
 			"name": "👑优酷（官）",
@@ -684,7 +686,8 @@
 			"quickSearch": 0,
 			"filterable": 0,
 			"ext": "4acb3ad2f2254ba1b566279f7cd98ba3"
-		}],
+		}
+	],
 	"parses": [{
 		"name": "解析聚合",
 		"type": 3,
@@ -704,7 +707,7 @@
 	}, {
 		"name": "GGTV快速",
 		"type": 1,
-		"url": "https://play.fuqizhishi.com/gang/API.php?appkey=QQ172598364&url="
+		"url": "https://play.fuqizhishi.com/gang0818/API.php?appkey=QQ172598364&url="
 	}, {
 		"name": "m3u8tv高清",
 		"type": 0,
