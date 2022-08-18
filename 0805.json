@@ -1,5 +1,6 @@
  {
- "spider":"clan://TVBox/0805.jar",
+  "spider":"https://gitee.com/nxniuniu/za/raw/master/0805.jar;md5;381a02b64a5bd9853369369c335b8018",
+  //"spider":"clan://TVBox/0805.jar",
   //"spider": "https://cn.kstore.space/download/2844/tvbox/0805.jar;md5;381a02b64a5bd9853369369c335b8018",
 	"wallpaper": "http://www.kf666888.cn/api/tvbox/img",
 	"lives": [{
