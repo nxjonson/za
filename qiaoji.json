@@ -6,7 +6,7 @@
 //"spider":"https://wp.wangshi520.com/down.php/f1119df4fc629e71103cc19e2c7b2338.jar",
 "wallpaper":"http://www.kf666888.cn/api/tvbox/img",
 // 直播
-"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly93ZHMuZWNzeHMuY29tLzIyNjExOC5qcw=="]}]}],
+"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlZS5jb20vbnhuaXVuaXUvaGlrZXItcnVsZXMvcmF3L21hc3Rlci9ydWxlcy9saXZlLyVFOCVBNyU4NiVFNyU5NSU4QyVFNCVCOCU5NiVFNyU5NSU4Qy5qcw=="]}]}],
 	"sites": [{
 		"key": "csp_Wmkk",
 		"name": "🐞完美看看",
