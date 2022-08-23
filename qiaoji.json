@@ -2,7 +2,7 @@
 "spider":"https://gitee.com/nxniuniu/za/raw/master/qiaoji.jar;md5;fa546425c146fe48b37e94ea0cbdef50",
 
 // 直播	
-"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlZS5jb20vbnhuaXVuaXUvaGlrZXItcnVsZXMvcmF3L21hc3Rlci9ydWxlcy9saXZlLyVFOCVBNyU4NiVFNyU5NSU4QyVFNCVCOCU5NiVFNyU5NSU4Qy5qcw=="]}]}],
+"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cDovL210dy5zby82aklyWmI="]}]}],
 
 "sites":[
 {"key":"小苹果","name":"🍎小苹果","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable":1},
