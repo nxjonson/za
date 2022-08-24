@@ -93,4 +93,4 @@ https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox
     }
 
 # 关于打包
-https://sspai.com/post/70427
+[更新慢、弃坑了？实现 Android 应用自给自足：GitHub Actions 编译实例](https://sspai.com/post/70427)
