@@ -60,7 +60,7 @@ https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox
 
         }
 
-        //自定义默认配置-硬解-安全dns-缩略图
+//自定义默认配置，硬解，缩略图
 
         if (!Hawk.contains(HawkConfig.IJK_CODEC)) {
 
@@ -68,19 +68,13 @@ https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox
 
         }
 
-        if (!Hawk.contains(HawkConfig.DOH_URL)) {
-
-            Hawk.put(HawkConfig.DOH_URL, 2);
-
-        }
+       
 
         if (!Hawk.contains(HawkConfig.SEARCH_VIEW)) {
 
             Hawk.put(HawkConfig.SEARCH_VIEW, 2);
 
         }
-
-    }
 
     public static App getInstance() {
 
