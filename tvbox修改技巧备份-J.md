@@ -81,5 +81,5 @@ takagen99大佬仓库 改这里;app/src/main/res/values-zh/strings.xml
         return instance;
 
     }
-    # 关于打包
+  # 关于打包
    [更新慢、弃坑了？实现 Android 应用自给自足：GitHub Actions 编译实例](https://sspai.com/post/70427)
