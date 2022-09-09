@@ -66,7 +66,7 @@ public static App getInstance() {
 
 # 6、小窗口默认开启(把show_priew  相关的默认值都改成false 就是关闭了)
 
-这里：app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
+## 这里：app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
 
 @@ -81,7 +81,7 @@ protected void init() {
         tvFastSearchText = findViewById(R.id.showFastSearchText);	        tvFastSearchText = findViewById(R.id.showFastSearchText);
