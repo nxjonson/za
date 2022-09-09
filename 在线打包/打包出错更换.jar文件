@@ -2,4 +2,4 @@
 # 欲打包仓库根目录build.gradle 里 https://download.01.org/crosswalk/releases/crosswalk/android/maven2 改成https://cn.kstore.space/download/2844
 # https://cn.kstore.space/download/2844建目录org/xwalk/xwalk_shared_library/23.53.589.4
 # org/xwalk/xwalk_shared_library/23.53.589.4目录下放xwalk_shared_library-23.53.589.4.pom和xwalk_shared_library-23.53.589.4.aar
-# 本仓库同样的目录org/xwalk/xwalk_shared_library/23.53.589.4放了文件
+# 本仓库同样的目录org/xwalk/xwalk_shared_library/23.53.589.4放了文件(需转rew打头网址，所以选了凯速网)
