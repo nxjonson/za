@@ -1,32 +1,32 @@
-1、修改软件名称地址
+# 1、修改软件名称地址
 
 https://github.com/nxjonson/Box/blob/main/app/src/main/res/values/strings.xml
 
 https://gitee.com/nxniuniu/Box/blob/main/app/src/main/res/values/strings.xml
 
-2、修改版本号
+# 2、修改版本号
 
 https://github.com/nxjonson/Box/blob/main/app/src/main/AndroidManifest.xml
 
 https://gitee.com/nxniuniu/Box/blob/main/app/src/main/AndroidManifest.xml
 
-3、修改图标、背景
+# 3、修改图标、背景
 
 https://github.com/nxjonson/Box/tree/main/app/src/main/res
 
 https://gitee.com/nxniuniu/Box/tree/main/app/src/main/res
 
-4、修改内置源
+# 4、修改内置源
 
 https://github.com/nxjonson/Box/blob/main/app/src/main/res/values-zh/strings.xml
 
-5、修改默认缩略图、硬解、dns
+# 5、修改默认缩略图、硬解、dns
 
-地址：
+  地址：
 
-https://github.com/nxjonson/Box/blob/main/app/src/main/java/com/github/tvbox/osc/base/App.java
+  https://github.com/nxjonson/Box/blob/main/app/src/main/java/com/github/tvbox/osc/base/App.java
 
-代码
+ 代码
 
 @@ -53,9 +53,19 @@ private void initParams() {
 
@@ -64,7 +64,7 @@ public static App getInstance() {
 
 }
 
-6、小窗口默认开启(把show_priew  相关的默认值都改成false 就是关闭了)
+# 6、小窗口默认开启(把show_priew  相关的默认值都改成false 就是关闭了)
 
 这里：app/src/main/java/com/github/tvbox/osc/ui/fragment/ModelSettingFragment.java
 
@@ -85,7 +85,7 @@ public static App getInstance() {
             }	            }
         });	        });
  
-这里：app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
+## 这里：app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
 
 @@ -553,7 +553,6 @@ public void onChanged(AbsXml absXml) {
                     llPlayerFragmentContainer.setVisibility(View.GONE);	                    llPlayerFragmentContainer.setVisibility(View.GONE);
