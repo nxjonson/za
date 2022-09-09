@@ -18,25 +18,25 @@
 
 技巧
 
-1、修改软件名称地址
+## 1、修改软件名称地址
 
 https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/res/values/strings.xml
 
 https://gitee.com/nxniuniu/TVBoxOS/blob/main/app/src/main/res/values/strings.xml
 
-2、修改版本号
+## 2、修改版本号
 
 https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/AndroidManifest.xml
 
 https://gitee.com/nxniuniu/TVBoxOS/blob/main/app/src/main/AndroidManifest.xml
 
-3、修改图标、背景
+## 3、修改图标、背景
 
 https://github.com/nxjonson/TVBoxOS/tree/main/app/src/main/res
 
 https://gitee.com/nxniuniu/TVBoxOS/tree/main/app/src/main/res
 
-4、修改内置源
+## 4、修改内置源
 
 俊老仓库打开下面,第83行
 
@@ -44,13 +44,13 @@ https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox
 
 takagen99大佬仓库 改这里;app/src/main/res/values-zh/strings.xml
 
-5、修改默认缩略图、硬解、dns
+## 5、修改默认缩略图、硬解、dns
 
-地址：
+  地址：
 
-https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox/osc/base/App.java
+  https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox/osc/base/App.java
 
-代码
+  代码
 
 @@ -53,9 +53,19 @@ private void initParams() {
 
