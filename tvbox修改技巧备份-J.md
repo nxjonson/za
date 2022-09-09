@@ -42,8 +42,6 @@ https://gitee.com/nxniuniu/TVBoxOS/tree/main/app/src/main/res
 
 https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
 
-takagen99大佬仓库 改这里;app/src/main/res/values-zh/strings.xml
-
 ## 5、修改默认缩略图、硬解、dns
 
   地址：
