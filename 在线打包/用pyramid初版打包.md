@@ -2,9 +2,7 @@
 # apk-T(J).sh内合并pyramid里改对应链接为https://raw.githubusercontent.com/nxjonson/za/master/pyramid_0.aar
 # 删除
  
-   else{
-
-            String doStr = param.get("do").toString();
+   else{      String doStr = param.get("do").toString();
 
             if(doStr.equals("live")) return PythonLoader.getInstance().proxyLocal("","",param);
 
