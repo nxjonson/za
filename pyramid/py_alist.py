@@ -25,7 +25,7 @@ class Spider(Spider):  # 元类 默认的元类 type
     def homeContent(self, filter):
         result = {}
         cateManual = {
-            "菊花盘": "https://pan.142856.xyz/OneDrive",
+               "菊花盘": "https://pan.142856.xyz/OneDrive",
             "触光云盘": "https://pan.ichuguang.com",
             "小孟资源": "https://8023.haohanba.cn",
             "资源小站": "https://960303.xyz",
@@ -95,6 +95,7 @@ class Spider(Spider):  # 元类 默认的元类 type
             jo = json.loads(rsp.text)
             vodList = jo['data']['content']
         videos = []
+        cid = ''
         for vod in vodList:
             if ver == 2:
                 img = vod['thumbnail']
@@ -110,6 +111,8 @@ class Spider(Spider):  # 元类 默认的元类 type
             if vod['type'] == 1:
                 tag = "folder"
                 remark = "文件夹"
+                cid = baseurl + aid + vod['name']
+            #计算文件大小
             else:
                 size = vod['size']
                 if size > 1024 * 1024 * 1024 * 1024.0:
@@ -129,9 +132,53 @@ class Spider(Spider):  # 元类 默认的元类 type
                     sz = round(size / (1024.0), 2)
                 tag = "file"
                 remark = str(sz) + fs
-            aid = baseurl + aid + vod['name']
+                # 开始爬视频与字幕
+                srtvodList = str(vodList)
+                foldernum = srtvodList.count('\'type\': 1')
+                filename = len(vodList) - foldernum
+                if filename < 60:
+                    if 'mp4' in vod['name'] or 'mkv' in vod['name'] or 'TS' in vod['name'] or 'flv' in vod[
+                        'name'] or 'rmvb' in vod['name'] or 'mp3' in vod['name'] or 'flac' in vod['name'] or 'wav' in \
+                            vod['name'] or 'wma' in vod['name'] or 'wma' in vod['name']:
+                        cid = ''
+                        for temvod in vodList:
+                            if 'mp4' in temvod['name'] or 'mkv' in temvod['name'] or 'TS' in temvod['name'] or 'flv' in \
+                                    temvod['name'] or 'rmvb' in temvod['name'] or 'mp3' in temvod['name'] or 'flac' in \
+                                    temvod['name'] or 'wav' in temvod['name'] or 'wma' in temvod['name'] or 'wma' in \
+                                    temvod['name']:
+                                vurl = baseurl + aid + temvod['name']
+                                # 开始爬字幕
+                                subname = re.findall(r"(.*)\.", temvod['name'])[0]
+                                substr = re.findall(r"\'name\': \'(.*?)\'", str(vodList))
+                                if len(substr) == 2:
+                                    suball = substr
+                                else:
+                                    suball = difflib.get_close_matches(subname, substr, len(vodList), cutoff=0.8)
+                                for sub in suball:
+                                    if sub.endswith(".ass") or sub.endswith(".srt"):
+                                        subt = '@@@' + baseurl + aid + sub
+                                ifsubt = 'subt' in locals().keys()
+                                if ifsubt is False:
+                                    cid = cid + '{0}${1}#'.format(temvod['name'], vurl)
+                                else:
+                                    cid = cid + '{0}${1}{2}#'.format(temvod['name'], vurl, subt)
+                            else:
+                                cid = cid
+                    if cid == '':
+                        cid = baseurl + aid + vod['name']
+                else:
+                    subname = re.findall(r"(.*)\.", vod['name'])[0]
+                    substr = re.findall(r"\'name\': \'(.*?)\'", str(vodList))
+                    if subname + '.ass' in substr:
+                        subt = '@@@' + baseurl + aid + subname + '.ass'
+                        cid = baseurl + aid + vod['name'] + subt
+                    elif  subname + '.srt' in substr:
+                        subt = '@@@' + baseurl + aid + subname + '.srt'
+                        cid = baseurl + aid + vod['name'] + subt
+                    else:
+                        cid = baseurl + aid + vod['name']
             videos.append({
-                "vod_id":  aid,
+                "vod_id":  cid,
                 "vod_name": vod['name'],
                 "vod_pic": img,
                 "vod_tag": tag,
@@ -146,58 +193,27 @@ class Spider(Spider):  # 元类 默认的元类 type
 
     def detailContent(self, array):
         id = array[0]
+        if '$' in id:
+            ids = id.split('$')[1].split('#')[0].split('@@@')
+            url = ids[0]
+        else:
+            url = id
         if self.ver == '' or self.baseurl == '':
-            self.getVersion(id)
-        ver = self.ver
+            self.getVersion(url)
         baseurl = self.baseurl
-        fileName = id.replace(baseurl, "")
-        dir = re.findall(r"(.*)/", fileName)[0].replace(baseurl, "")
-        dirparam = {
-            "path": '/' + dir,
-            "password": "",
-            "page_num": 1,
-            "page_size": 100
-        }
+        if '$' in id:
+            vid = re.findall(r"(.*)/", url.replace(baseurl, ""))[0].replace(baseurl, "")
+        else:
+            vid = url.replace(re.findall(r".*/", url)[0], "")
+            id = vid + '$' + id
         vod = {
-            "vod_id": fileName,
-            "vod_name": dir,
+            "vod_id": vid,
+            "vod_name": vid,
             "vod_pic": '',
             "vod_tag": '',
             "vod_play_from": "播放",
+            "vod_play_url": id
         }
-        if ver == 2:
-            drsp = self.postJson(baseurl + 'api/public/path', dirparam)
-            djo = json.loads(drsp.text)
-            dList = djo['data']['files']
-        elif ver == 3:
-            drsp = self.postJson(baseurl + 'api/fs/list', dirparam)
-            djo = json.loads(drsp.text)
-            dList = djo['data']['content']
-        playUrl = ''
-        for tempd in dList:
-            if 'mp4' in tempd['name'] or 'mkv' in tempd['name'] or 'TS' in tempd['name'] or 'flv' in tempd['name'] or 'rmvb' in tempd['name'] or 'mp3' in tempd['name'] or 'flac' in tempd['name'] or 'wav' in tempd['name']:
-            # 开始匹配视频
-                # 视频名称 name
-                name = tempd['name']
-                # 视频链接 url
-                fname = re.findall(r"(.*)/", fileName)[0] + '/' + name
-                url = baseurl + fname
-                # 开始找字幕 subt
-                vname = re.findall(r"(.*)\.", tempd['name'])[0]
-                vstr = re.findall(r"\'name\': \'(.*?)\'", str(dList))
-                if len(vstr) == 2:
-                    suball = vstr
-                else:
-                    suball = difflib.get_close_matches(vname, vstr, len(dList), cutoff=0.8)
-                for sub in suball:
-                    if sub.endswith(".ass") or sub.endswith(".srt"):
-                        subt = '@@@' + baseurl + dir + '/' +sub
-                ifsubt = 'subt' in locals().keys()
-                if ifsubt is False:
-                    playUrl = playUrl + '{0}${1}#'.format(name, url)
-                else:
-                    playUrl = playUrl + '{0}${1}{2}#'.format(name, url, subt)
-        vod['vod_play_url'] = playUrl
         result = {
             'list': [
                 vod
@@ -279,23 +295,25 @@ class Spider(Spider):  # 元类 默认的元类 type
                 vrsp = self.postJson(baseurl + 'api/public/path', vparam)
                 vjo = json.loads(vrsp.text)
                 vList = vjo['data']['files'][0]
+                driver = vList['driver']
                 url = vList['url']
             elif ver == 3:
                 vrsp = self.postJson(baseurl + 'api/fs/get', vparam)
                 vjo = json.loads(vrsp.text)
                 vList = vjo['data']
                 url = vList['raw_url']
+                driver = vList['provider']
             if url.startswith('http') is False:
                 head = re.findall(r"h.*?:", baseurl)[0]
                 url = head + url
             urlvfileName = urllib.parse.quote(vfileName)
             url = url.replace(vfileName, urlvfileName)
+            if driver == 'Baidu.Disk':
+                result["header"] = {"User-Agent": "pan.baidu.com"}
         result["parse"] = 0
         result["playUrl"] = ''
         result["url"] = url
-        result["header"] = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
-        }
+
         return result
 
     config = {
