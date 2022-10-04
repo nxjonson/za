@@ -133,4 +133,4 @@ class Spider(Spider):
         "Referer": "https://u.gitcafe.net/"
 	}
 	def localProxy(self,param):
-		return [200, "video/MP2T", action, ""
+		return [200, "video/MP2T", action, ""]
