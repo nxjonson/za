@@ -42,7 +42,7 @@ https://gitee.com/nxniuniu/TVBoxOS/tree/main/app/src/main/res
 
 4、修改内置源
 
-俊老仓库打开下面,第114行
+俊老仓库打开下面,第118行
 
 https://github.com/nxjonson/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
 
