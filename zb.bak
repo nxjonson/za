@@ -1,0 +1,57 @@
+{
+  "lives": [
+    {
+      "name": "lvse",
+      "type": 0,
+      "url": "https://upld.zone.id/uploads/q9iq9e5iq/lvse.txt",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "jack",
+      "type": 0,
+      "url": "https://php.946985.filegear-sg.me/jackTV.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "ipv6",
+      "type": 0,
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/tushen6/xxooo/refs/heads/main/fyzb/ipv6.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "catvod",
+      "type": 0,
+      "url": "https://live.catvod.com/tv.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "bxtv",
+      "type": 0,
+      "url": "http://bxtv.3a.ink/live.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },
+    { "name": "冰茶", "type": 0, "playerType": 2, "url": "https://fy.188766.xyz/?ip=&lunbo=false&mima=mianfeidehaimaiqian&json=true", "ua": "bingcha/1.1" },
+    {    "name": "aptv",
+      "type": 0,
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/Kimentanm/aptv/refs/heads/master/m3u/iptv.m3u",
+      "ua": ""
+    }
+  ],
+  "headers": [
+    {
+      "host": "hlsztemgsplive.miguvideo.com",
+      "header": {
+        "User-Agent": "bingcha/1.1"
+      }
+    }
+  ],
+  "proxy": [
+    "raw.githubusercontent.com"
+  ],
+  "hosts": [
+    "hlsztemgsplive.miguvideo.com=hlsztemgsplive.miguvideo.com.b.cdn.chinamobile.com",
+    "push-rtmp-hs-spe-f5.douyincdn.com=source-fcdn-spe-push.s.bytefcdn.com",
+    "cdn9.163189.xyz=gcore.jsdelivr.net",
+    "cache.ott.fifalive.itv.cmvideo.cn=cache.ott.fifalive.itv.cmvideo.cn.e.cdn.chinamobile.com",
+    "studentlive.migucloud.com=base-v4v6-miguvideo.e.cdn.chinamobile.com"
+  ],
+  "ads": [
+    "static-mozai.4gtv.tv"
+  ]
+}
