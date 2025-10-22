@@ -1,0 +1,44 @@
+{
+  "lives": [
+   {  "name": "kakaxi-1/zubo_github",
+      "type": 1,   #0是m3u  1是txt
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/kakaxi-1/zubo/refs/heads/main/IPTV.txt",      
+      "epg":"https://epg.tv.darwinchow.com/epg.xml",
+      "ua": ""
+    },
+    {
+      "name": "lvse",
+      "type": 1,
+      "url": "https://upld.zone.id/uploads/q9iq9e5iq/lvse.txt",
+      "epg": "https://epg.tv.darwinchow.com/epg.xml",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "jack",
+      "type": 0,
+      "url": "https://php.946985.filegear-sg.me/jackTV.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "ipv6",
+      "type": 0,
+      "epg": "https://epg.tv.darwinchow.com/epg.xml",
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/tushen6/xxooo/refs/heads/main/fyzb/ipv6.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "catvod",
+      "type": 0,
+      "url": "https://live.catvod.com/tv.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },{
+      "name": "bxtv",
+      "type": 0,
+      "url": "http://bxtv.3a.ink/live.m3u",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },
+    { "name": "冰茶", "type": 0, "playerType": 2, "url": "https://fy.188766.xyz/?ip=&lunbo=false&mima=mianfeidehaimaiqian&json=true", "ua": "bingcha/1.1" },
+    {    "name": "aptv",
+      "type": 0,
+      "epg": "https://epg.tv.darwinchow.com/epg.xml",
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/Kimentanm/aptv/refs/heads/master/m3u/iptv.m3u",
+      "ua": ""
+    }
+  ]}
