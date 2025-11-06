@@ -4,7 +4,7 @@
       "type": 1,   #0是m3u  1是txt
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/nxjonson/TX/refs/heads/master/li.m3u",      
       "epg":"https://epg.136605.xyz/1day.xml",
-      "ua": ""
+      "ua": "okHttp/Mod-1.4.0.0"
     },
     {
       "name": "smart",
