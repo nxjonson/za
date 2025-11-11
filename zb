@@ -1,0 +1,55 @@
+{
+  "lives": [
+    {  "name": "圈转完就流畅播", 
+      "type": 0,   #0是m3u  1是txt
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/nxjonson/TX/refs/heads/master/li.m3u",      
+      "epg":"https://epg.tv.darwinchow.com/epg.xml",
+      "ua": "okHttp/Mod-1.4.0.0"
+    }, 
+    { "name": "fiii",
+      "type": 0,   #0是m3u  1是txt
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/judy-gotv/iptv/main/ofiii.m3u",      
+      "epg":"",
+      "ua": ""
+    },
+    { "name": "lvse",
+      "type": 1,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
+      "epg": "https://epg.tv.darwinchow.com/epg.xml",
+      "ua": "okHttp/Mod-1.4.0.0"
+    },  
+    { "name": "冰茶", 
+      "type": 0, "playerType": 2,
+      "url": "https://bc.188766.xyz/?ip=&mishitong=true&lunbo=false&mima=bingchawusifengxian",
+      "ua": "bingcha/1.1"
+    },
+    { "name": "aptv",
+      "type": 0,
+      "epg": "https://epg.tv.darwinchow.com/epg.xml",
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/Kimentanm/aptv/refs/heads/master/m3u/iptv.m3u",
+      "ua": ""
+    },
+    {  "name": "vhr_ofiii",
+      "type": 0,   #0是m3u  1是txt
+      "url": "http://vhr.dpdns.org:8080/ofiii.php",      
+      "epg":"",
+      "ua": ""
+    },
+    {  "name": "vhr_4gtv",
+      "type": 0,   #0是m3u  1是txt
+      "url": "http://vhr.dpdns.org:8080/4gtv.php",      
+      "epg":"",
+      "ua": ""
+    },
+    {  "name": "vhr_litv",
+      "type": 0,   #0是m3u  1是txt
+      "url": "http://vhr.dpdns.org:8080/litv.php",      
+      "epg":"",
+      "ua": ""
+    },
+    {  "name": "vhr_mytv",
+      "type": 0,   #0是m3u  1是txt
+      "url": "https://pan.850516.xyz/f/A5rs2/ccs-mytv.m3u",      
+      "epg":"",
+      "ua": ""
+    }]}
