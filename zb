@@ -10,13 +10,7 @@
       "type": 1,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
       "epg": "https://epg.tv.darwinchow.com/epg.xml",
-      "ua": "okHttp/Mod-1.4.0.0"
-    },
-    {  "name": "HKh",
-      "type": 0,   #0是m3u  1是txt
-      "url": "https://live.264788.xyz/sub/02RZNrjpqTMOrSdPX7FPyOxgUlgHKh",      
-      "epg":"",
-      "ua": ""
+      "ua": "okHttp/Mod-1.5.0.0"
     },
     { "name": "aptv",
       "type": 0,
