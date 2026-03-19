@@ -1,0 +1,26 @@
+{
+  "lives": [
+    {  "name": "圈转完就流畅播", 
+      "type": 0,   #0是m3u  1是txt
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/nxjonson/TX/refs/heads/master/li.m3u",      
+      "epg":"https://epg.tv.darwinchow.com/epg.xml",
+      "ua": "okHttp/Mod-1.5.0.0"
+    },
+    { "name": "lvse",
+      "type": 1,
+      "url": "https://codeberg.org/Jsnzkpg/Jsnzkpg/raw/branch/Jsnzkpg/Jsnzkpg1.m3u",
+      "epg": "",
+      "ua": ""
+    },
+    { "name": "aptv",
+      "type": 0,
+      "epg": "",
+      "url": "https://tvv.tw/https://raw.githubusercontent.com/Kimentanm/aptv/refs/heads/master/m3u/iptv.m3u",
+      "ua": ""
+    },
+    {  "name": "潇雨萌萌",
+      "type": 0,   #0是m3u  1是txt
+      "url": "http://43.251.226.110:9991/545321",      
+      "epg":"",
+      "ua": ""
+    }]}
